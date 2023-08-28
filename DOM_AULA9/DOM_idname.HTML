@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom fundamentals</title>
+    <style>
+        body{
+            background-color: rgb(48, 48, 138);
+            color: rgb(192, 192, 157);
+            font: normal 18px Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting learn DOM</h1>
+    <p>Here's the results</p>
+    <p>Here's the Result using a ID that I want</p>    
+    <div name="msg">TEST</div> 
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementsByName('msg')[0]//declarei a var d como um elemento que puxa <div name="msg">, fazendo assim as alterações que eu quiser !
+        d.style.background = 'red' //alterei o fundo da linha da variável d que possui o name de msg
+        d.innerText = 'Hello !' //alterei o a messagem original de TEST para Hello, com o o inner.Text
+    
+    
+        
+    </script>
+    
+</body>
+</html>

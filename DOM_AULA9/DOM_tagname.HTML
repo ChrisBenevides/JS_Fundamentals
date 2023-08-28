@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom fundamentals</title>
+    <style>
+        body{
+            background-color: rgb(48, 48, 138);
+            color: rgb(192, 192, 157);
+            font: normal 18px Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting learn DOM</h1>
+    <p>Learning how to use <strong>DOM</strong> in JS</p>
+    <p>Results of commands about choosing paragraphs in <strong>Guanabara's class</strong>: </p>
+    <p>Here's the Result using a tag to select the paragraph that I want</p>    
+    <div>Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]//getElementsByTagName('p')[0] o que está em (p) é o p e {0} é qual dos dois eu vou escolher(nesta estrutura existem dis <p>)
+            window.document.write('This is how is typed: ' + p1.innerText) 
+        p1.style.color = 'black'//Alterando a cor do texto pois o paragrafo [0] está vinculado com o p1
+            document.write(p1.innerText)
+    
+    
+        
+    </script>
+    
+</body>
+</html>
