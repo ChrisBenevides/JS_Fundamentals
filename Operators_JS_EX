@@ -1,0 +1,210 @@
+Operadores:
+
+- aritiméticos ← (+ - * / % **)
+
+- 5+2 = 7
+
+- 5-2 =  3
+
+- 5*2 = 10
+
+- 5/2 = 2.5 ← divisão inteira
+
+- 5%2 = 1 ← divisão real (resto da divisão inteira)
+
+- 5**2 = 5² = 25 ← potência
+
+ordem de precedência 
+
+- ()
+- **
+- / %
+- +-
+
+> 5+2
+7
+5*6
+30
+5**2
+25
+5+2/2
+6
+(5+2)/2
+3.5
+> 
+
+> var a = 5 + 3
+undefined
+var b = a % 5
+undefined
+var c = 5 ** 2
+undefined
+var c = 5 * b ** 2
+undefined
+var d = 10 - a / 2
+undefined
+var e = 6 * 2 / d
+undefined
+var f = b % e + 4 / e
+undefined
+a
+8
+b
+3
+c
+45
+d
+6
+e
+2
+f
+3
+> 
+
+AUTO ATRIBUIÇÃO
+
+> var n = 3
+undefined
+n = n + 4 ← n += 4
+7
+n = n - 5    **← n-= 5**
+2
+n = n * 4    **← n-=4**
+8
+n = n / 2    **← n/= 2**
+4
+n = n ** 2    **← n**=2**
+16
+n = n % 5    **← n%=5**
+1
+> 
+
+ordem de precedência 
+
+- ()
+- **
+- / %
+- +-
+
+incremento
+
+> n++
+10
+n
+11
+n--
+11
+n
+10
+n**
+... n
+10000000000
+n//2
+10
+n /=2
+5
+> 
+
+# AULA 8
+
+- relacionais (> / < / > = / < = / == / ! =)
+
+> 5>2
+true
+7<4
+false
+8>=8
+true
+var a = 7
+undefined
+var b = 9
+undefined
+a>b
+false
+a==b
+false
+a!=b
+true
+b>=a
+true
+> 
+- operadores de identidade
+
+5==5 < - são iguais
+
+5==’5’ ← o JS está analisando o valor e não outros caracteres, então são iguais mas não idênticos
+
+5===’5’ ← 3 sinais de igual significa idêntico
+
+> 5==5
+true
+5=='5'
+true
+var x = 5
+undefined
+var y = '5'
+undefined
+typeof x
+'number'
+typeof y
+'string'
+x === y
+false
+x!= y
+false
+x!== y
+true
+x>y
+false
+> 
+
+- lógicos
+
+! ← negação (não) ← operador uniario ← vem true or false
+
+&& ← conjução (e) ← operador binario ← vem true or false
+
+|| ← disjunção (ou) ← operador binario ← vem true or false
+
+> var a = 5
+undefined
+var b = 8
+undefined
+true && false
+false
+true || true
+true
+> 
+> 
+> a > b && b % 2 == 0
+> false
+> a<= b || b/2 == 2
+> true
+> idade>= $$ idade <= 17 // a idade está entre 15 e 17 ?
+> estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP ?
+> salário >1500 && sexo != 'M' //o salário é acima de 1500 e não é homem ?
+> 
+- ternário ← se chama pois tem três partes
+
+?
+
+:
+
+teste ? true : false
+
+> var média = 6
+undefined
+média >7?'APROVADO' : 'REPROVADO'
+'REPROVADO'
+média +=3
+9
+média >7'APROVADO : 'REPROVADO'
+média >7'APROVADO : 'REPROVADO'
+^^^^^^^^^^^^^
+> 
+
+Uncaught SyntaxError: Unexpected string
+
+> média > 8.9 ? 'APROVADO' : 'REPROVADO'
+'APROVADO'
+>
