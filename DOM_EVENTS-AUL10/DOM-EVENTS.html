@@ -25,8 +25,10 @@
 <script>
     var a = window.document.getElementById('area')//declarar a variável ‘a’ livre para receber quantas interações forem necessárias 
                                                     //como ? declarando a var e seu atributo antes de qualquer interação no bloco. das functions
-
-    function clicar() {
+a.addEventListener('click', clicar)//vai prestar atenção a determinados eventos, encurtando os códigos do HTML.
+a.addEventListener('mouseenter', entrar)//declarei a ação (mouseenter), entrar <- texto após ação
+a.addEventListener('mouseout', sair)//declarei a ação (mouseout), sair <- texto após ação
+function clicar() {
         a.innerText = "Clicou" //quando eu clicar na minha div area, vai mudar o elemento após ter disparado a a função onclick
         a.style.background = 'red'//alterando a cor após o click
     }
