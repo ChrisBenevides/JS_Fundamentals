@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+</head>
+<style>
+    div#area{
+        font: normal 30pt Calibri;
+        background: rgb(113, 23, 131);
+        color: rgb(233, 43, 10);
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        border-radius: 50px;
+    }
+</style>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Click it
+    </div>
+    
+<script>
+    var a = window.document.getElementById('area')//declarar a variável ‘a’ livre para receber quantas interações forem necessárias 
+                                                    //como ? declarando a var e seu atributo antes de qualquer interação no bloco. das functions
+
+    function clicar() {
+        a.innerText = "Clicou" //quando eu clicar na minha div area, vai mudar o elemento após ter disparado a a função onclick
+        a.style.background = 'red'//alterando a cor após o click
+    }
+
+    function entrar() {
+        a.innerText = "Entrou" //quando eu clicar na minha div area, vai mudar o elemento após ter disparado a a função onclick
+
+    }
+
+    function sair() {
+        a.innerText = "Saiu" //quando eu clicar na minha div area, vai mudar o elemento após ter disparado a a função onclick
+        a.style.background = 'green'//alterando a cor após o click
+    }
+
+
+    </script>
+</body>
+</html>
