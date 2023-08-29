@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom fundamentals</title>
+    <style>
+        body{
+            background-color: rgb(48, 48, 138);
+            color: rgb(192, 192, 157);
+            font: normal 18px Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting learn DOM</h1>
+    <p>Here's the results</p>
+    <p>Here's the Result using a ID that I want</p>    
+    <div id="msg">TEST</div> 
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.querySelector('div#msg')//div com id msg <- toda div por # e toda class .
+        d.style.color = 'red'   
+        d.style.background = 'black'           
+    
+        
+    </script>
+    
+</body>
+</html>
